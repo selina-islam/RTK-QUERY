@@ -7,6 +7,7 @@ import store from './redux_rtk/store';
 import { BrowserRouter, Route, Routes } from 'react-router'
 import Home from './pages/Home.jsx'
 import SinglePost from './pages/SinglePost.jsx'
+import AddPostPage from './pages/AddPostPage.jsx'
 
 createRoot(document.getElementById('root')).render(
   <Provider store={store}>
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
     <Route element={<App/>}>
       <Route path='/' element={<Home/>}/>
       <Route path='/posts/:id' element={<SinglePost/>}/>
+      <Route path='/add-post' element={<AddPostPage/>}/>
     </Route>
    </Routes>
    </BrowserRouter>
