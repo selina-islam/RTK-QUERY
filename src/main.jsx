@@ -16,7 +16,7 @@ createRoot(document.getElementById('root')).render(
    <Routes>
     <Route element={<App/>}>
       <Route path='/' element={<Home/>}/>
-      <Route path='/posts/:id' element={<SinglePost/>}/>
+      <Route path='/blogs/:id' element={<SinglePost/>}/>
       <Route path='/add-post' element={<AddPostPage/>}/>
     </Route>
    </Routes>
