@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { useDeleteUserMutation, useGetUsersQuery } from "../../redux_rtk/features/users/usersApi";
 import Loader from "./Loader";
 import { Link } from "react-router";
 
 const Users = () => {
-  const { data: users = [], isLoading, error } = useGetUsersQuery();
+  const[page, setPage]= useState(1)
+  const { data: users = [], isLoading, error } = useGetUsersQuery({page, limit:2});
   const [deleteUser]=useDeleteUserMutation() 
+  console.log(users.data)
+   if (error) return <p> error</p>;
   if (isLoading) return <Loader />;
-  if (error) return <p> error</p>;
+ 
 
   const handleDeleteUser=async(id)=>{
 try{
@@ -18,8 +21,9 @@ try{
 }
   }
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 m-5">
-      {users.map((user, index) => (
+   <div>
+     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 m-5">
+      {users?.data.map((user, index) => (
         <div key={index} className="shadow-md rounded-lg p-5 space-y-2">
           <img
             src="https://cdn-icons-png.flaticon.com/128/149/149071.png"
@@ -38,6 +42,12 @@ try{
         </div>
       ))}
     </div>
+    <div className="my-8 flex items-center justify-center space-x-8">
+      <button onClick={()=>setPage(prev => Math.max(prev-1, 1))} className="py-1 px-5 text-white bg-blue-600">Previous</button>
+        <span className="font-semibold">Page {page}</span>
+      <button onClick={()=>setPage(prev => Math.max(prev+1, ))} className="py-1 px-5 text-white bg-blue-600">Next</button>
+    </div>
+   </div>
   );
 };
 

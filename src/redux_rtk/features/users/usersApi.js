@@ -9,9 +9,9 @@ const userApi= createApi({
      endpoints:(builder)=>({
         // get all users from server
         getUsers: builder.query({
-            query:()=>  '/users',
+            query:({page,limit})=>  `/users?_page=${page}&_per_page=${limit}`,
             //providesTags:['Users']
-            providesTags: (result) => result ? result.map(({id}) => ({type: 'Users', id})): ['Users']
+            providesTags: (result)=> result ? result?.data.map(({id})=> ({type:'Users', id})):['Users']
         }),
 
         // get single user details

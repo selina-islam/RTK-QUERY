@@ -8,27 +8,6 @@
       "isActive": true
     },
     {
-      "id": "5",
-      "name": "Esha Karim",
-      "email": "esha.karim@example.com",
-      "age": 27,
-      "isActive": false
-    },
-    {
-      "id": " 6",
-      "name": "Fahim Ahmeddd",
-      "email": "fahim.ahmed@example.com",
-      "age": 35,
-      "isActive": true
-    },
-    {
-      "id": " 7",
-      "name": "Gulshan Hossain",
-      "email": "gulshan.ara@example.com",
-      "age": 29,
-      "isActive": true
-    },
-    {
       "id": " 8",
       "name": "Hasan Kabir",
       "email": "hasan.kabir@example.com",
