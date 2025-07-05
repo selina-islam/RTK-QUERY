@@ -16,14 +16,14 @@
     },
     {
       "id": " 6",
-      "name": "Fahim Ahmed",
+      "name": "Fahim Ahmeddd",
       "email": "fahim.ahmed@example.com",
       "age": 35,
       "isActive": true
     },
     {
       "id": " 7",
-      "name": "Gulshan Ara",
+      "name": "Gulshan Hossain",
       "email": "gulshan.ara@example.com",
       "age": 29,
       "isActive": true
@@ -46,7 +46,7 @@
       "id": "10",
       "name": "Jahidul Islam",
       "email": "jahidul.islam@example.com",
-      "age": 31,
+      "age": "315",
       "isActive": true
     }
   ]

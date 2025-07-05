@@ -4,7 +4,6 @@ import { useGetAllOPostsQuery } from '../redux_rtk/features/posts/postApi'
 
 const Home = () => {
      const{data, isLoading, error}= useGetAllOPostsQuery()
-  console.log(data)
   if(error) return <div>something went wrong!</div>
   if(isLoading) return <div>loading</div>
   return (

@@ -1,6 +1,7 @@
 import React from "react";
 import { useDeleteUserMutation, useGetUsersQuery } from "../../redux_rtk/features/users/usersApi";
 import Loader from "./Loader";
+import { Link } from "react-router";
 
 const Users = () => {
   const { data: users = [], isLoading, error } = useGetUsersQuery();
@@ -29,7 +30,8 @@ try{
           <p>Email: {user?.email}</p>
           <p>Age: {user?.age}</p>
           <div className="space-x-4">
-            <button className="px-6 py-1 bg-blue-600">Update</button>
+            <Link to={`/user-edit/${user.id}`}> <button className="px-6 py-1 bg-blue-600">Update</button></Link>
+           
 
             <button onClick={()=> handleDeleteUser(user?.id)} className="px-6 py-1 bg-red-600">Delete</button>
           </div>

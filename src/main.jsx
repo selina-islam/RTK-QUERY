@@ -21,8 +21,8 @@ createRoot(document.getElementById('root')).render(
       <Route path='/' element={<Home/>}/>
       <Route path='/blogs/:id' element={<SinglePost/>}/>
       <Route path='/add-post' element={<AddPostPage/>}/>
-      <Route path='/user-edit' element={<EditUser/>}/>
-      <Route path='//user-add' element={<Adduser/>}/>
+      <Route path='/user-edit/:id' element={<EditUser/>}/>
+      <Route path='/user-add' element={<Adduser/>}/>
       <Route path='/users' element={<Users/>}/>
     </Route>
    </Routes>
