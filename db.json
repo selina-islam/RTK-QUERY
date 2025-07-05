@@ -1,74 +1,53 @@
 {
   "users": [
-  {
-    "id": 1,
-    "name": "Alice Rahman",
-    "email": "alice.rahman@example.com",
-    "age": 25,
-    "isActive": true
-  },
-  {
-    "id": 2,
-    "name": "Bashir Uddin",
-    "email": "bashir.uddin@example.com",
-    "age": 30,
-    "isActive": false
-  },
-  {
-    "id": 3,
-    "name": "Chhobi Akter",
-    "email": "chhobi.akter@example.com",
-    "age": 22,
-    "isActive": true
-  },
-  {
-    "id": 4,
-    "name": "Dipto Hossain",
-    "email": "dipto.hossain@example.com",
-    "age": 28,
-    "isActive": true
-  },
-  {
-    "id": 5,
-    "name": "Esha Karim",
-    "email": "esha.karim@example.com",
-    "age": 27,
-    "isActive": false
-  },
-  {
-    "id": 6,
-    "name": "Fahim Ahmed",
-    "email": "fahim.ahmed@example.com",
-    "age": 35,
-    "isActive": true
-  },
-  {
-    "id": 7,
-    "name": "Gulshan Ara",
-    "email": "gulshan.ara@example.com",
-    "age": 29,
-    "isActive": true
-  },
-  {
-    "id": 8,
-    "name": "Hasan Kabir",
-    "email": "hasan.kabir@example.com",
-    "age": 33,
-    "isActive": false
-  },
-  {
-    "id": 9,
-    "name": "Ishrat Jahan",
-    "email": "ishrat.jahan@example.com",
-    "age": 26,
-    "isActive": true
-  },
-  {
-    "id": 10,
-    "name": "Jahidul Islam",
-    "email": "jahidul.islam@example.com",
-    "age": 31,
-    "isActive": true
-  }
-]
+    {
+      "id": "4",
+      "name": "Dipto Hossain",
+      "email": "dipto.hossain@example.com",
+      "age": 28,
+      "isActive": true
+    },
+    {
+      "id": "5",
+      "name": "Esha Karim",
+      "email": "esha.karim@example.com",
+      "age": 27,
+      "isActive": false
+    },
+    {
+      "id": " 6",
+      "name": "Fahim Ahmed",
+      "email": "fahim.ahmed@example.com",
+      "age": 35,
+      "isActive": true
+    },
+    {
+      "id": " 7",
+      "name": "Gulshan Ara",
+      "email": "gulshan.ara@example.com",
+      "age": 29,
+      "isActive": true
+    },
+    {
+      "id": " 8",
+      "name": "Hasan Kabir",
+      "email": "hasan.kabir@example.com",
+      "age": 33,
+      "isActive": false
+    },
+    {
+      "id": "9",
+      "name": "Ishrat Jahan",
+      "email": "ishrat.jahan@example.com",
+      "age": 26,
+      "isActive": true
+    },
+    {
+      "id": "10",
+      "name": "Jahidul Islam",
+      "email": "jahidul.islam@example.com",
+      "age": 31,
+      "isActive": true
+    }
+  ]
 }
