@@ -8,6 +8,9 @@ import { BrowserRouter, Route, Routes } from 'react-router'
 import Home from './pages/Home.jsx'
 import SinglePost from './pages/SinglePost.jsx'
 import AddPostPage from './pages/AddPostPage.jsx'
+import EditUser from './pages/user/EditUser.jsx'
+import Users from './pages/user/Users.jsx'
+import Adduser from './pages/user/Adduser.jsx'
 
 createRoot(document.getElementById('root')).render(
   <Provider store={store}>
@@ -18,6 +21,9 @@ createRoot(document.getElementById('root')).render(
       <Route path='/' element={<Home/>}/>
       <Route path='/blogs/:id' element={<SinglePost/>}/>
       <Route path='/add-post' element={<AddPostPage/>}/>
+      <Route path='/user-edit' element={<EditUser/>}/>
+      <Route path='//user-add' element={<Adduser/>}/>
+      <Route path='/users' element={<Users/>}/>
     </Route>
    </Routes>
    </BrowserRouter>
